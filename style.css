@@ -36,10 +36,13 @@ img { max-width: 100%; }
 .margin-b-0 { margin-bottom: 0; }
 
 
-.bg-light    { background-color: #F8F6F4; }
-.bg-featured { background-color: #018ca2; }
+.bg-light    { background-color: #f7f0e8f1; }
+.bg-featured { 
+    background-color: #082838; 
+    color: white;
+}
 
-.text-featured { color: #f59186;} 
+.text-featured { color: #E09200;} 
 
 .left   { text-align: left; }
 .center { text-align: center; }
