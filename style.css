@@ -58,11 +58,11 @@ header {
   
 
   body {
-    font-family: "Roboto-Slab", sans-serif;
+    font-family: 'Roboto', sans-serif;
     }
     
     h1,h2,h3,h4,h5,h6{
-    font-family: "Libra-Baskerville", sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     margin-bottom: 0.5rem;
     }
@@ -90,7 +90,7 @@ header {
     }
     
     p, li {
-    font-weight: 200;
+       font-weight: 200;
     line-height: 1.4;
     margin-bottom: 0.8rem;
     font-size: 1.1rem;
@@ -167,7 +167,56 @@ header {
         padding-bottom: 30%;
     }
     
-    
+    /* Hamburger menu */
+
+    .hamburger-button {
+        cursor: pointer;
+        padding: 0 0.5rem;
+        display: inline-block;
+        font-weight: 200;
+        font-size: 2.5rem;
+        line-height: 0.8;
+        margin-top: -0.7rem;
+        position: fixed;
+        right: 1rem;
+        top: 2.5rem;
+        z-index: 2;
+  }
+  
+  .hamburger-button.active {
+        color: white;
+  }
+  
+  
+  .mobile-menu {
+        display: none; 
+        background-color: lightblue; 
+        padding: 5%;
+        position: fixed; 
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+  }
+  
+  
+  .mobile-menu a {
+        text-decoration: none; 
+        color: inherit; 
+        padding: 5vh 5%;
+        display: block;
+        font-weight: normal;
+        font-size: 1.5rem;
+  }
+
+
+/* Default Responsive Styles (Dekstop and below) */
+.mob-show {
+    display: none; 
+}
+
+
     @media(max-width: 48em) {
         .hide-sm {display: none;}
     
@@ -176,5 +225,7 @@ header {
         h1{font-size: 4rem;}
         footer h2{font-size: 3rem;}
     
+        .mob-hide { display: none; }
+  	.mob-show { display: block; }
     }
     
